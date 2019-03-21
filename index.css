@@ -1,0 +1,110 @@
+body{
+    background-color: #f1eded;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content::before{
+    content: "";
+    background-image: url(./logo-tecSaltillo2.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 34%;
+    width: 47%;
+    top: 7%;
+    left: 40%;
+}
+
+.error{
+    color: red;
+    content: "";
+    position: absolute;
+    top: 75%;   
+    left: 37%;
+     max-width: 33%;
+}
+
+.content{
+    padding: 37% 20%;
+    position: relative;
+}
+
+.inputs{
+    position: relative;
+    display: flex;
+}
+.title{
+    position: relative;
+    left: 7%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.btn_submit{
+    position: relative;
+    left: 33%;
+    margin-top: 7%;
+}
+
+ /* 576 px */
+@media screen and (min-width: 36em){
+
+    body{
+    background-color: #ffffff;
+    overflow-y: hidden;
+}
+
+    .content::before{
+        height: 68%;
+    background-image: url('./principal.jpg');
+    background-size: cover;
+    top: -172px;
+    left: -7px;
+    width: 102%;
+    }
+
+    .title{
+        margin-top: 23%;
+    }
+    .inputs{
+        left: 13%;
+    }
+    .btn_submit{
+        left: 33%;
+    }
+}
+@media screen and (min-width: 48em){
+   
+    .content::before{
+        content: "";    
+        background-size: 60%;
+        top: -130px;
+        left: 0;
+        max-height: 40%;
+        width: 100%;
+        background-position: center;
+    }
+    .inputs{
+        top: -160px;
+        left: 26%;
+
+    }
+    .btn_submit{
+        top: 30px;
+    }
+    .title{
+        margin-top: 0;
+        top: -188px;
+        left: 20%;
+        margin-bottom: 0;
+    }
+    .error{
+        top:40%;
+        left: 40%;
+        max-width: 13%;
+    }
+
+}
+
+/*  768px  */ 
+/*  992px  */ 
